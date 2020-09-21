@@ -76,6 +76,11 @@ On Macintosh OS-X 10.8, Casey Rodarmor shared this tip:
 I recently had a little trouble getting the teensy cli loader working on Mac OSX 10.8. Apple moved the location of the SDKs around, so that they now reside inside of the xcode app itself. This is the line in the makefile that got it working for me:
 SDK ?= /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
 
+On Macintosh OS-X 10.15:
+
+Uncomment OS ?= MACOSX
+Comment SDK instead add SDK ?= /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+
 ## Makefile Integration
 
 You can use teensy_loader_cli from your Makefile, to autoamtically program your freshly compiled code. Here is an example:
