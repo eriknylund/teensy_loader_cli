@@ -79,7 +79,12 @@ SDK ?= /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Deve
 On Macintosh OS-X 10.15:
 
 Uncomment OS ?= MACOSX
-Comment SDK instead add SDK ?= /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+Comment SDK and instead add SDK ?= /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+
+```
+OS ?= MACOSX
+SDK ?= /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk
+```
 
 ## Makefile Integration
 
